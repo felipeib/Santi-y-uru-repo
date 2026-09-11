@@ -1,0 +1,74 @@
+*{
+    list-style: none;
+    text-decoration:none;
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../img/hero.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.marca{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+    align-self:flex-start;
+    border-radius: 20%;
+    margin: 30px;
+}
+h1{
+color: rgb(253, 253, 253)
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+.bar{
+    color:chocolate;
+    border-radius: 25%;
+    background-color: aliceblue;
+    padding: 10px;
+}
+li{
+    margin: 20px;
+    font-size: 20px;
+    align-self: flex-end;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.autos{
+    width: 300px;
+}
+article{
+    margin: 30px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    
+}
+.ver-mas{
+    color: rgb(255, 254, 253);
+    border-radius: 25%;
+    background-color: chocolate;
+    padding: 10px;
+}
+.lista{
+    color:chocolate;
+    
+}
+
