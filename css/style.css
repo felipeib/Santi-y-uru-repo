@@ -1,0 +1,36 @@
+*{
+    list-style: none;
+    text-decoration:none;
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(15, 15, 74);
+}
+h1{
+    color: rgb(253, 253, 253);
+}
+.logo{
+    width: 100px;
+    align-self:flex-start;
+    border-radius: 20%;
+    margin: 30px;
+}
+.nav-1 ul{
+    display: flex;
+    flex-direction: flex ;
+}
+li{
+    margin: 20px;
+    font-size: 20px;
+}
+a{
+    color: rgb(225, 97, 5);
+    border-radius: 25%;
+    background-color: aliceblue;
+    padding: 10px;
+    align-self:flex-end;
+}
