@@ -30,7 +30,7 @@ header{
     margin: 30px;
 }
 .donOmar{
-color: rgb(253, 253, 253)
+    color: rgb(253, 253, 253)
 }
 .menu{
     display: flex;
@@ -60,7 +60,6 @@ color: rgb(253, 253, 253)
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
     display: flex; 
     flex-direction: column; 
-    gap: 18px;
 }
 .titulo-login { 
     font-size: 26px; 
@@ -74,7 +73,6 @@ color: rgb(253, 253, 253)
 .campo-formulario { 
     display: flex; 
     flex-direction: column; 
-    gap: 6px; 
 }
 .campo-formulario label { 
     font-size: 14px; 
@@ -86,7 +84,6 @@ color: rgb(253, 253, 253)
     border: 1px solid #cccccc; 
     border-radius: 4px; 
     font-size: 14px; 
-    outline: none; 
 }
 .boton-ingresar { 
     background-color: #e74c3c; 
@@ -96,7 +93,6 @@ color: rgb(253, 253, 253)
     border-radius: 4px; 
     font-size: 16px; 
     font-weight: bold; 
-    cursor: pointer; 
     width: 100%; 
     text-align: center; 
 } 
