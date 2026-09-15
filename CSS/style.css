@@ -190,11 +190,9 @@ footer{
 .formulario-login{
     background-color: #ffffff; 
     border-radius: 8px; 
-    border: 1px solid #e1e8ed; 
-    padding: 35px 30px; 
-    width: 100%; 
-    max-width: 400px; 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
+    border: 1px #e1e8ed; 
+    padding: 30px; 
+    width: 100%;                       
     display: flex; 
     flex-direction: column; 
 }
@@ -203,9 +201,6 @@ footer{
     color: #1a252f; 
     margin: 0 0 10px 0; 
     text-align: center; 
-    font-weight: 700; 
-    border-bottom: 2px solid #e74c3c; 
-    padding-bottom: 10px; 
 }
 .campo-formulario { 
     display: flex; 
@@ -229,7 +224,6 @@ footer{
     padding: 12px; 
     border-radius: 4px; 
     font-size: 16px; 
-    font-weight: bold; 
     width: 100%; 
     text-align: center; 
 } 
