@@ -65,6 +65,7 @@ article{
 
 }
 
+
 /* BARRA BUSQUEDA */
 .barra-busqueda{
     color:chocolate;
@@ -141,17 +142,42 @@ li{
 aside{
     background-color: #1a252f;
 }
-section{
+.oso-1{
     display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
-.corolla{
-    width: 738 px;
-}
-.div-1{
+.oso-2{
     display: flex;
     flex-direction: row;
+}
+.oso-3{
+    display: flex;
+    flex-direction: row;
+}
+.panda-1{
+    align-self: center;
+}
+.panda-2{
+    display: flex;
+    flex-direction: row;
+    border: #2c3e50;
+    border-style: solid;
+}
+.polar-1{
+    border: #2c3e50;
+    border-style: dashed;
+}
+.caja-product{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+}
+.porsche{
+    width: 600px;
+}
+.orden-product{
+    display: flex;
+    flex-direction: column;
 }
 footer{
     display: flex;
@@ -162,7 +188,6 @@ footer{
     height: 10 vh;
     width: 100 vw;
 }
-
 
 
 /* LOGIN CSS*/
@@ -245,8 +270,8 @@ footer{
     font-size: 14px; 
 }
 
-/* registrarse.html tiene las mismas class que login.html */
 
+/* registrarse.html tiene las mismas class que login.html */
 footer{
     display: flex;
     flex-direction: row;
