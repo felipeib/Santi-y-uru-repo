@@ -1,3 +1,4 @@
+/* index.html */
 *{
     list-style: none;
     text-decoration:none;
@@ -30,12 +31,12 @@ header{
     border-radius: 20%;
     margin: 30px;
 }
-.donOmar{
-color: rgb(253, 253, 253)
-}
 .menu{
     display: flex;
     flex-direction: row;
+}
+.donOmar{
+color: rgb(253, 253, 253)
 }
 .bar{
     color:chocolate;
@@ -46,11 +47,6 @@ color: rgb(253, 253, 253)
 main{
     display: flex;
     flex-direction: row;
-}
-li{
-    margin: 20px;
-    font-size: 20px;
-    align-self: flex-end;
 }
 aside{
     background-color: #1a252f;
@@ -110,31 +106,7 @@ h2{
 
 
 /* PRODUCT CSS*/
-.marca{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.logo{
-    width: 100px;
-    align-self:flex-start;
-    border-radius: 20%;
-    margin: 30px;
-}
-.donOmar{
-color: rgb(253, 253, 253)
-}
 .menu{
-    display: flex;
-    flex-direction: row;
-}
-.bar{
-    color:chocolate;
-    border-radius: 25%;
-    background-color: aliceblue;
-    padding: 10px;
-}
-main{
     display: flex;
     flex-direction: row;
 }
@@ -142,9 +114,6 @@ li{
     margin: 20px;
     font-size: 20px;
     align-self: flex-end;
-}
-aside{
-    background-color: #1a252f;
 }
 .oso-1{
     display: flex;
@@ -159,11 +128,13 @@ aside{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: rgb(195, 195, 195);
 }
 .panda-1{    
     border: #2c3e50;
     border-style: solid;
     height: 600px;
+    background-color: white;
 }
 .panda-2{
     display: flex;
@@ -179,6 +150,7 @@ aside{
     width: 380px;
     padding: 30px;
     padding-bottom: 30px;
+    background-color: white;
 
 }
 .caja-product{
@@ -198,35 +170,21 @@ aside{
     margin: 20px;
     padding-right: 500px;
     padding-left: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
 }
 
 
 
 
 /* LOGIN CSS*/
-.marca{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.logo{
-    width: 100px;
-    align-self:flex-start;
-    border-radius: 20%;
-    margin: 30px;
-}
 .donOmar{
     color: rgb(253, 253, 253)
 }
 .menu{
     display: flex;
     flex-direction: row;
-}
-.bar{
-    color:chocolate;
-    border-radius: 25%;
-    background-color: aliceblue;
-    padding: 10px;
 }
 .contenido-principal{
     display: flex; 
