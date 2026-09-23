@@ -317,3 +317,49 @@ footer{
     }
 }
 
+@media (max-width: 425px){
+    /* header */
+    .logo {
+        width: 60px;
+        margin: 5px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    li {
+        margin: 5px;
+        font-size: 16px;
+    }
+    .menu{
+        margin: 15px;
+    }
+    /* main del html */
+    main{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .category{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    h2{
+        padding-right: 105px;
+        padding-left: 105px;
+        margin-left: 30px;
+        margin-right: 25px;
+        
+    }
+    .pipo{
+        width: 100%;
+        .autos{
+            width: 100%;
+        }
+    }
+    
+    /* main del product */
+    .panda-1{
+        height: 70%;
+    }
+}
