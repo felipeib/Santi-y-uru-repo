@@ -290,6 +290,30 @@ footer{
         }
     }
 
-    
+    /*  main - product.html */
+
+    .oso-2{
+        flex-direction: column;
+    }
+    .porsche{
+        width: 100%;
+        }
+        .comentarios {
+        padding-right: 20px;
+        padding-left: 20px;
+        margin: 20px;
+    }
+    .panda-2 {
+        height: auto;
+    }
+    .polar-1 {
+        width: 100%;
+        padding: 15px;
+    }
+    .comentario{
+        padding-right: 20px;
+        padding-left: 20px;
+        margin: 20px;
+    }
 }
 
