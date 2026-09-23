@@ -17,7 +17,7 @@ header{
     justify-content: space-between;
     align-items: center;
     background-image: url(../img/hero.jpg);
-    background-size: 100%;
+    background-size: 1440px;
     background-repeat: no-repeat;
 }
 .marca{
@@ -251,4 +251,45 @@ footer{
 }
 
 
+/*   responsive desktop.  */
+@media (max-width: 768px){ 
+     /*header*/
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-size: cover;
+    }
+    .logo{
+    align-self:center;
+    width: 80px;
+    }
+    
+    /*  main - index.html */
+    main{
+        flex-direction: column;
+        padding: 10px;
+        
+    }
+    .category{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    h2{
+        padding-right: 280px;
+        padding-left: 290px;
+        align-self: center;
+    }
+    .pipo{
+        width: 47%;
+        .autos{
+            width: 100%;
+        }
+    }
+
+    
+}
 
