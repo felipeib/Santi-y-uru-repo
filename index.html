@@ -1,245 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head> 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="CSS/style.css">
-        <title>Santi y  Uru </title>
-    </head>
-    <body>
-        <header>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Don Omar - Home</title>
+</head>
+<body>
+    <header>
         <div class="marca">
-        <img src="./img/logo.jpg" alt="Logo de Don Omar" class="logo">
-        <h1><a href="./index.html" class="donOmar">Don Omar</a></h1>
+            <a href="./index.html">
+                <img src="./img/logo.jpg" alt="Logo de Don Omar" class="logo">
+            </a>
+            <h1><a href="./index.html" class="donOmar">Don Omar</a></h1>
         </div>
-            <nav class="nav-1">
-                <ul class="menu">
-                 <li><a href="./index.html" class="bar"> Home</a></li>
-                 <li><a href="./login.html"class=" bar"> Inicar sesion</a></li>
-                 <li><a href="./registrarse.html"class="bar"> Registrarse</a></li>
-                </ul>
-            </nav>
-        <form action="./search-results.html" method="GET" class="barra-busqueda">
+
+        <nav class="nav-1">
+            <ul class="menu">
+                <li><a href="./index.html" class="bar">Home</a></li>
+                <li id="item-login"><a href="./login.html" class="bar">Iniciar sesión</a></li>
+                <li id="item-registro"><a href="./register.html" class="bar">Registrarse</a></li>
+                <li id="item-logout" class="oculto"><a href="#" class="bar">Logout</a></li>
+            </ul>
+        </nav>
+
+        <p class="saludo" id="saludo"></p>
+
+        <form action="./search-results.html" method="GET" class="barra-busqueda" id="form-busqueda">
             <div>
-                <label for="busqueda">Busqueda: </label>
+                <label for="busqueda">Búsqueda: </label>
                 <input id="busqueda" type="text" name="busqueda" value="">
             </div>
-
             <div>
                 <button type="submit">Buscar</button>
             </div>
+            <p class="error-formulario" id="error-busqueda"></p>
         </form>
-        </header>
-        <main>
-            <aside>
+    </header>
+
+    <main>
+        <aside>
             <nav class="nav-2">
-                <ul class="category">
-                    <li><a href="./category.html" class="lista-1">Categories</a></li>
-                    <li><a href="./category.html" class="lista">Sports</a></li>
-                    <li><a href="./category.html"class="lista">Muscle</a></li>
-                    <li><a href="./category.html"class="lista">Trucks</a></li>
-                    <li><a href="./category.html"class="lista">Coupe</a></li>
-                    <li><a href="./category.html"class="lista">Hatchback</a></li>
-                    <li><a href="./category.html" class="lista">Convertible</a></li>
-                    <li><a href="./category.html" class="lista">SUV </a></li>
-                    <li><a href="./category.html" class="lista">Van</a></li>
+                <ul class="category" id="lista-categorias">
+                    <li><span class="lista-1">Categorías</span></li>
                 </ul>
             </nav>
-            </aside>
+        </aside>
+
+        <div class="contenido">
+            <section>
+                <h2>Celulares</h2>
+                <div class="lista-productos" id="seccion-1"></div>
+            </section>
 
             <section>
-                 <h2> Autos nuevos</h2>
-                <article class="pipo">
-                    <img src="./img/garage-1.jpg" class=" autos">                
-                    <h3>Ford Mustang</h3>
-                    <p>Icónico muscle car clásico con</p>
-                    <p>motor V8, carrocería fastback y</p>
-                    <p>estética deportiva en impecable estado.</p>
-                    <p>$ 105.000 USD</p>                  
-                    <a href="./product.html" class=" ver-mas">Ver más</a>
-                </article>
-                <article class="pipo">
-                    <img src="./img/garage-2.jpg" class=" autos">          
-                    <h3>Porsche 911 GT3</h3>
-                    <p>Deportivo de alta precisión con motor </p>
-                    <p>bóxer atmosférico, aerodinámica pura</p>
-                    <p>y dinámica de circuito.</p>
-                    <p>$ 215.000 USD</p>            
-                    <a href="./product.html" class=" ver-mas">Ver más</a>
-                </article>
+                <h2>Accesorios</h2>
+                <div class="lista-productos" id="seccion-2"></div>
+            </section>
+        </div>
+    </main>
 
-                <article class="pipo">
-                    <img src="./img/garage-3.jpg" class=" autos">                
-                    <h3>Ferrari 488 GTB</h3>
-                    <p>Superdeportivo con motor V8 biturbo,</p>
-                    <p>aerodinámica avanzada de circuito y 
-                    <p>rendimiento visceral en carretera.<p>
-                    <p>$ 265.000 USD</p>           
-                    <a href="./product.html" class=" ver-mas">Ver más</a>
-                </article>
+    <footer>
+        <p>© 2026 - Don Omar</p>
+        <p>Integrantes: Santiago Mordentti - Felipe Ibañez Beati</p>
+    </footer>
 
-                <article class="pipo">
-                    <img src="./img/garage-4jpg.jpeg" class=" autos">              
-                    <h3>McLaren 720S</h3>
-                    <p>Superdeportivo de vanguardia con 
-                    <p>monocasco de fibra de carbono,</p>
-                    <p>aerodinámica activa y potencia explosiva.</p>
-                    <p>$ 300.000 USD</p>            
-                    <a href="./product.html" class=" ver-mas">Ver más</a>
-                </article>
-                    <article class="pipo">
-                    <img src="./img/garage-5.jpg" class=" autos">               
-                   <h3>Lamborghini Huracán</h3>
-                   <p>Superdeportivo extremo con motor V10 
-                   <p>atmosférico, tracción total y diseño</p>  
-                    <p>afilado de pura adrenalina.</p>
-                   <p>$ 240.000 USD</p>            
-                    <a href="./product.html" class=" ver-mas">Ver más</a>
-                </article>
-                    <article class="pipo">
-                    <img src="./img/garage-6.jpg" class=" autos">            
-                    <h3>Aston Martin Vantage</h3>
-                    <p>Deportivo británico con diseño elegante</p>
-                    <p>y atlético, motor V8 biturbo y</p>
-                    <p>inamismo ágil de pura elegancia.</p>
-                    <p>$ 157.000 USD</p>     
-                    <a href="./product.html" class=" ver-mas">Ver más</a>
-                </article>
-                    <article class="pipo">
-                    <img src="./img/garage-7.jpg" class=" autos">            
-                    <h3>Bugatti Chiron</h3>
-                    <p>Hypercar de extremo rendimiento con</p>
-                    <p>motor W16 quad-turbo, potencia</p>
-                    <p>descomunal y elegancia definitiva.</p>
-                    <p>$ 3.000.000 USD</p>
-                    <a href="./product.html" class=" ver-mas">Ver más</a>
-                </article>
-                    <article class="pipo">
-                    <img src="./img/garage-8.jpg" class=" autos">              
-                    <h3>Koenigsegg Jesko</h3>
-                    <p>Hypercar sueco de pista con aerodinámica</p>
-                    <p>extrema, fibra de carbono visible</p>
-                    <p>y potencia hipervónica sin igual.</p>
-                    <p>$ 3.400.000 USD</p>                 
-                    <a href="./product.html" class=" ver-mas">Ver más</a>
-                </article>
-                    <article class="pipo">
-                    <img src="./img/garage-9.jpg" class=" autos">               
-                    <h3>Mercedes-Benz 300SL Gullwing</h3>
-                    <p>Leyenda clásica con icónicas puertas</p>
-                    <p>alas de gaviota, inyección mecánica</p>
-                    <p>y elegancia atemporal inigualable.</p>
-                    <p>$ 1.600.000 USD</p>            
-                    <a href="./product.html" class=" ver-mas">Ver más</a>
-                </article>
-                    <article class="pipo">
-                    <img src="./img/gargage-10.jpg" class=" autos">     
-                    <h3>Ford F-100 (1986)</h3>
-                    <p>Icónica pick-up clásica americana con</p>
-                    <p>carrocería robusta, estilo vintage</p>
-                    <p>auténtico y alma indestructible.</p>
-                    <p>$ 45.000 USD</p>              
-                    <a href="./product.html" class=" ver-mas">Ver más</a>
-                </article>
-
-                <h2> Autos usados </h2>
-        <section class="section-2">
-                 <article class="pipo">
-                    <img src="./img/garage-1.jpg" class=" autos">                
-                    <h3>Ford Mustang</h3>
-                    <p>Icónico muscle car clásico con</p>
-                    <p>motor V8, carrocería fastback y</p>
-                    <p>estética deportiva en impecable estado.</p>
-                    <p>$ 105.000 USD</p>                  
-                    <a href="./product.html" class=" ver-mas">Ver más</a>
-                </article>
-
-                <article class="pipo">
-                    <img src="./img/garage-2.jpg" class=" autos">          
-                    <h3>Porsche 911 GT3</h3>
-                    <p>Deportivo de alta precisión con motor </p>
-                    <p>bóxer atmosférico, aerodinámica pura</p>
-                    <p>y dinámica de circuito.</p>
-                    <p>$ 215.000 USD</p>            
-                    <a href="./product.html" class=" ver-mas">Ver más</a>
-                </article>
-
-                <article class="pipo">
-                    <img src="./img/garage-3.jpg" class=" autos">                
-                    <h3>Ferrari 488 GTB</h3>
-                    <p>Superdeportivo con motor V8 biturbo,</p>
-                    <p>aerodinámica avanzada de circuito y 
-                    <p>rendimiento visceral en carretera.<p>
-                    <p>$ 265.000 USD</p>           
-                    <a href="./product.html" class=" ver-mas">Ver más</a>
-                </article>
-
-                <article class="pipo">
-                    <img src="./img/garage-4jpg.jpeg" class=" autos">              
-                    <h3>McLaren 720S</h3>
-                    <p>Superdeportivo de vanguardia con 
-                    <p>monocasco de fibra de carbono,</p>
-                    <p>aerodinámica activa y potencia explosiva.</p>
-                    <p>$ 300.000 USD</p>            
-                    <a href="./product.html" class=" ver-mas">Ver más</a>
-                </article>
-                    <article class="pipo">
-                    <img src="./img/garage-5.jpg" class=" autos">               
-                   <h3>Lamborghini Huracán</h3>
-                   <p>Superdeportivo extremo con motor V10 
-                   <p>atmosférico, tracción total y diseño</p>  
-                    <p>afilado de pura adrenalina.</p>
-                   <p>$ 240.000 USD</p>            
-                    <a href="./product.html" class=" ver-mas">Ver más</a>
-                </article>
-                    <article class="pipo">
-                    <img src="./img/garage-6.jpg" class=" autos">            
-                    <h3>Aston Martin Vantage</h3>
-                    <p>Deportivo británico con diseño elegante</p>
-                    <p>y atlético, motor V8 biturbo y</p>
-                    <p>inamismo ágil de pura elegancia.</p>
-                    <p>$ 157.000 USD</p> 
-                    <a href="./product.html" class=" ver-mas">Ver más</a>
-                </article>
-                    <article class="pipo">
-                    <img src="./img/garage-7.jpg" class=" autos">            
-                    <h3>Bugatti Chiron</h3>
-                    <p>Hypercar de extremo rendimiento con</p>
-                    <p>motor W16 quad-turbo, potencia</p>
-                    <p>descomunal y elegancia definitiva.</p>
-                    <p>$ 3.000.000 USD</p>
-                    <a href="./product.html" class=" ver-mas">Ver más</a>
-                </article>
-                    <article class="pipo">
-                    <img src="./img/garage-8.jpg" class=" autos">              
-                    <h3>Koenigsegg Jesko</h3>
-                    <p>Hypercar sueco de pista con aerodinámica</p>
-                    <p>extrema, fibra de carbono visible</p>
-                    <p>y potencia hipervónica sin igual.</p>
-                    <p>$ 3.400.000 USD</p>                 
-                    <a href="./product.html" class=" ver-mas">Ver más</a>
-                </article>
-                    <article class="pipo">
-                    <img src="./img/garage-9.jpg" class=" autos">               
-                    <h3>Mercedes-Benz 300SL Gullwing</h3>
-                    <p>Leyenda clásica con icónicas puertas</p>
-                    <p>alas de gaviota, inyección mecánica</p>
-                    <p>y elegancia atemporal inigualable.</p>
-                    <p>$ 1.600.000 USD</p>            
-                    <a href="./product.html" class=" ver-mas">Ver más</a>
-                </article>
-                    <article class="pipo">
-                    <img src="./img/gargage-10.jpg" class=" autos">     
-                    <h3>Ford F-100 (1986)</h3>
-                    <p>Icónica pick-up clásica americana con</p>
-                    <p>carrocería robusta, estilo vintage</p>
-                    <p>auténtico y alma indestructible.</p>
-                    <p>$ 45.000 USD</p>              
-                    <a href="./product.html" class=" ver-mas">Ver más</a>
-                </article>
-        </main>
-        <footer> 
-            <p>© 2026 - Don Omar</p> <p>Integrantes: Santiago Mordentti - Felipe Ibañez Beati</p> 
-        </footer>
-    </body> 
+    <script src="./js/categorias.js"></script>
+    <script src="./js/buscador.js"></script>
+    <script src="./js/saludo.js"></script>
+    <script src="./js/logout.js"></script>
+    <script src="./js/index.js"></script>
+</body>
 </html>

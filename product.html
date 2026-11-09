@@ -1,112 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head> 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./CSS/style.css">
-        <title>Santi y  Uru </title>
-    </head>
-    <body>
-        <header>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Don Omar - Producto</title>   
+</head>
+<body>
+    <header>
         <div class="marca">
-        <img src="./img/logo.jpg" alt="Logo de Don Omar" class="logo">
-        <h1><a href="./index.html" class="donOmar">Don Omar</a></h1>
+            <a href="./index.html">
+                <img src="./img/logo.jpg" alt="Logo de Don Omar" class="logo">
+            </a>
+            <h1><a href="./index.html" class="donOmar">Don Omar</a></h1>
         </div>
-            <nav class="nav-1">
-                <ul class="menu">
-                 <li><a href="./index.html" class="bar"> Home</a></li>
-                 <li><a href="./login.html"class=" bar"> Inicar sesion</a></li>
-                 <li><a href="./registrarse.html"class="bar"> Registrarse</a></li>
-                </ul>
-            </nav>
-        <form action="./search-results.html" method="GET" class="barra-busqueda">
+
+        <nav class="nav-1">
+            <ul class="menu">
+                <li><a href="./index.html" class="bar">Home</a></li>
+                <li id="item-login"><a href="./login.html" class="bar">Iniciar sesión</a></li>
+                <li id="item-registro"><a href="./register.html" class="bar">Registrarse</a></li>
+                <li id="item-logout" class="oculto"><a href="#" class="bar">Logout</a></li>
+            </ul>
+        </nav>
+
+        <p class="saludo" id="saludo"></p>
+
+        <form action="./search-results.html" method="GET" class="barra-busqueda" id="form-busqueda">
             <div>
-                <label for="busqueda">Busqueda: </label>
+                <label for="busqueda">Búsqueda: </label>
                 <input id="busqueda" type="text" name="busqueda" value="">
             </div>
-
             <div>
                 <button type="submit">Buscar</button>
             </div>
+            <p class="error-formulario" id="error-busqueda"></p>
         </form>
-        </header>
-        <main>  
-            <aside>
+    </header>
+
+    <main>
+        <aside>
             <nav class="nav-2">
-                <ul class="category">
-                    <li><a href="./category.html" class="lista-1">Categories</a></li>
-                    <li><a href="./category.html" class="lista">Sports</a></li>
-                    <li><a href="./category.html"class="lista">Muscle</a></li>
-                    <li><a href="./category.html"class="lista">Trucks</a></li>
-                    <li><a href="./category.html"class="lista">Coupe</a></li>
-                    <li><a href="./category.html"class="lista">Hatchback</a></li>
-                    <li><a href="./category.html" class="lista">Convertible</a></li>
-                    <li><a href="./category.html" class="lista">SUV </a></li>
-                    <li><a href="./category.html" class="lista">Van</a></li>
+                <ul class="category" id="lista-categorias">
+                    <li><span class="lista-1">Categorías</span></li>
                 </ul>
             </nav>
         </aside>
-        <section class="oso-1">
-            <article class="oso-2">
-                <img class=" porsche" src="./img/garage-2.jpg" alt="porche">
-                <ul class="panda-1">
-                 <li><a href="./category.html"> Categoría: Sports car</a></li>
-                 <li><h1>Porsche 911 GT3</h1></li>
-                 <li><p>Marca: Porsche</p></li>
-                 <li><p>$ 215.000 USD</p></li>
-                 <li><p>Deportivo de alta precisión con motor bóxer atmosférico, aerodinámica pura y dinámica de circuito homologada para la calle.</p></li>
-                 <li><p>Stock: 5 unidades</p></li>
-                </ul>
-            </article>
-            <h3 class="comentarios"> Comentarios de compradores</h3>
-            <article class=" oso-3">
-              <ul class="panda-2">
-                 <li class="polar-1">
-                     <p>⭐⭐⭐⭐⭐</p>
-                     <p>Una verdadera joya de la ingeniería con un diseño</p>
-                     <p> agresivo y un rendimiento que enamora al instante.</p>
-                     <p>12/08/2026</p> 
-                     <p>Diego Armando Maradona</p>
-                 </li>
-                <li class="polar-1">
-                     <p>⭐⭐⭐⭐⭐</p>
-                     <p>Una verdadera joya de la ingeniería con un diseño</p>
-                     <p> agresivo y un rendimiento que enamora al instante.</p>
-                     <p>12/08/2026</p> 
-                     <p>Cristian Romero</p> 
-                 </li>
-                <li class="polar-1">
-                     <p>⭐⭐⭐⭐⭐</p>
-                     <p>Una verdadera joya de la ingeniería con un diseño</p>
-                     <p> agresivo y un rendimiento que enamora al instante.</p>
-                     <p>12/08/2026</p> 
-                     <p>Juan Simon Perez</p>
-                 </li>                 
-                <li class="polar-1">
-                     <p>⭐⭐⭐⭐⭐</p>
-                     <p>Una verdadera joya de la ingeniería con un diseño</p>
-                     <p> agresivo y un rendimiento que enamora al instante.</p>
-                     <p>12/08/2026</p> 
-                     <p>Ricardo Ford</p>
-                 </li>                 
-                <li class="polar-1">
-                     <p>⭐⭐⭐⭐⭐</p>
-                     <p>Una verdadera joya de la ingeniería con un diseño</p>
-                     <p> agresivo y un rendimiento que enamora al instante.</p>
-                     <p>12/08/2026</p> 
-                     <p>Luis Rodriguez</p>
-                 </li>                 
-                <li class="polar-1">
-                     <p>⭐⭐⭐⭐⭐</p>
-                     <p>Una verdadera joya de la ingeniería con un diseño</p>
-                     <p> agresivo y un rendimiento que enamora al instante.</p>
-                     <p>12/08/2026</p> 
-                     <p>Felipe tobar</p>
-                </ul>
-        </section>
+
+        <div class="contenido">
+            <section class="oso-1">
+                <article class="oso-2">
+                    <img class="porsche" id="producto-imagen" src="" alt="">
+                    <ul class="panda-1">
+                        <li><a href="#" id="producto-categoria">Categoría: </a></li>
+                        <li><h2 id="producto-nombre"></h2></li>
+                        <li><p id="producto-marca">Marca: </p></li>
+                        <li><p id="producto-precio"></p></li>
+                        <li><p id="producto-descripcion"></p></li>
+                        <li><p id="producto-stock">Stock: </p></li>
+                        <li><p id="producto-tags">Tags: </p></li>
+                    </ul>
+                </article>
+
+                <h3 class="comentarios">Comentarios de compradores</h3>
+
+                <article class="oso-3">
+                    <ul class="panda-2" id="lista-reviews"></ul>
+                </article>
+            </section>
+        </div>
     </main>
-    </body>
-    <footer> 
-        <p>© 2026 - Don Omar</p> <p>Integrantes: Santiago Mordentti - Felipe Ibañez Beati</p> 
+
+    <footer>
+        <p>© 2026 - Don Omar</p>
+        <p>Integrantes: Santiago Mordentti - Felipe Ibañez Beati</p>
     </footer>
+
+    <script src="./js/categorias.js"></script>
+    <script src="./js/buscador.js"></script>
+    <script src="./js/saludo.js"></script>
+    <script src="./js/logout.js"></script>
+    <script src="./js/product.js"></script>
+</body>
 </html>
