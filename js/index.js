@@ -55,5 +55,5 @@ fetch('https://dummyjson.com/products/category/' + categoria2)
     seccion2.innerHTML=contenidoHtml;
 })
 .catch(function(error){
-    console.log("Error: "+error);
+    console.log("Error:"+error);
 })
