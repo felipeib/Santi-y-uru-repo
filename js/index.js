@@ -1,12 +1,12 @@
-/* 1\. Captura de los contenedores en el DOM mediante selector por ID */
+/* Captura de los contenedores en el DOM mediante selector por ID */
 let seccion1 = document.querySelector("#seccion-1"); 
 let seccion2 = document.querySelector("#seccion-2");
 
-/* 2\. Definición de las categorías elegidas para la API */
+/* categoria elegidad */
 let categoria1 = "smartphones"; 
 let categoria2 = "mobile-accessories";
 
-/* primera categoria */
+/* primera categoria - smartphones */
 fetch('https://dummyjson.com/products/category/smartphones') 
 .then(function(response) { 
     return response.json(); 
@@ -18,22 +18,22 @@ fetch('https://dummyjson.com/products/category/smartphones')
     for (let i = 0; i < productos.length; i++) { 
         let producto = productos[i];
 
-        contenidoHtml += '<article>' + 
-        '' + '<h3>' + data.products[i].title + '</h3>' + 
-        '<p>' + data.products[i].description + '</p>' + 
-        '<p>Precio: $' + data.products[i].price + '</p>' + 
-        '<a href="./product-detail.html?id=' + data.products[i].id + '">ver detalle</a>' + 
-        '</article>';
+        contenidoHtml += '<article class="pipo"> ' + 
+            '<img class="autos" src="' + producto.thumbnail + '" alt="' + producto.title + '">' +
+            '<h3>' + producto.title + '</h3>' +
+            '<p>' + producto.description + '</p>' +
+            '<p>$ ' + producto.price + ' USD</p>' +
+            '<a class="ver-mas" href="./product.html?id=' + producto.id + '">Ver detalle</a>' +
+            '</article>';
     }
-
     seccion1.innerHTML=contenidoHtml;
 })
 .catch(function(error){
     console.log("Error: "+error);
 })
 
-/* segunda categoria */
-fetch('https://dummyjson.com/products/category/vehicle') 
+/* segunda categoria - mobile-accessories */
+fetch('https://dummyjson.com/products/category/' + categoria2) 
 .then(function(response) { 
     return response.json(); 
 }) 
@@ -41,15 +41,15 @@ fetch('https://dummyjson.com/products/category/vehicle')
     let productos = data.products; 
     let contenidoHtml = ""; 
 
-    for (let i = 0; i < productos.length; i++) { 
+    for (let i = 0; i <= productos.length; i++) { 
         let producto = productos[i];
-        
-        contenidoHtml += '<article>' + 
-        '' + '<h3>' + data.products[i].title + '</h3>' + 
-        '<p>' + data.products[i].description + '</p>' + 
-        '<p>Precio: $' + data.products[i].price + '</p>' + 
-        '<a href="./product-detail.html?id=' + data.products[i].id + '">ver detalle</a>' + 
-        '</article>';
+        contenidoHtml += '<article class="pipo"> ' + 
+            '<img class="autos" src="' + producto.thumbnail + '" alt="' + producto.title + '">' +
+            '<h3>' + producto.title + '</h3>' +
+            '<p>' + producto.description + '</p>' +
+            '<p>$ ' + producto.price + ' USD</p>' +
+            '<a class="ver-mas" href="./product.html?id=' + producto.id + '">Ver detalle</a>' +
+            '</article>';
     }
 
     seccion2.innerHTML=contenidoHtml;

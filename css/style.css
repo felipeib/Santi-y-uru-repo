@@ -1,7 +1,7 @@
-/* index.html */
+/* ===== GENERAL ===== */
 *{
     list-style: none;
-    text-decoration:none;
+    text-decoration: none;
     box-sizing: border-box;
     margin: 0;
     border: 0;
@@ -11,6 +11,8 @@ body{
     background-image: url(../img/fondo.jpg);
     background-size: 1440px;
 }
+
+/* ===== HEADER ===== */
 header{
     display: flex;
     flex-direction: row;
@@ -27,23 +29,47 @@ header{
 }
 .logo{
     width: 100px;
-    align-self:flex-start;
+    align-self: flex-start;
     border-radius: 20%;
     margin: 30px;
+}
+.donOmar{
+    color: rgb(253, 253, 253);
+}
+.nav-1,
+.nav-2{
+    padding: 10px;
 }
 .menu{
     display: flex;
     flex-direction: row;
 }
-.donOmar{
-color: rgb(253, 253, 253)
-}
 .bar{
-    color:chocolate;
+    color: chocolate;
     border-radius: 25%;
     background-color: aliceblue;
     padding: 10px;
 }
+.saludo{
+    color: aliceblue;
+    padding: 10px;
+}
+.barra-busqueda{
+    color: chocolate;
+    border-radius: 25%;
+    background-color: aliceblue;
+    padding: 10px;
+}
+.error-formulario{
+    color: #e74c3c;
+    font-size: 14px;
+    padding: 5px;
+}
+.oculto{
+    display: none;
+}
+
+/* ===== ESTRUCTURA ===== */
 main{
     display: flex;
     flex-direction: row;
@@ -51,10 +77,20 @@ main{
 aside{
     background-color: #1a252f;
 }
+.contenido{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 section{
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
+}
+.lista-productos{
+    display: flex;
+    flex-direction:row-reverse;
+    flex-wrap:wrap
 }
 article{
     display: flex;
@@ -63,18 +99,40 @@ article{
     justify-content: space-between;
     margin: 10px;
 }
+li{
+    margin: 20px;
+    font-size: 20px;
+    align-self: flex-end;
+}
+h2{
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px;
+    text-align: center;
+    background-color: #2c3e50;
+    color: chocolate;
+    border-radius: 30px;
+}
 
+/* ===== MENU DE CATEGORIAS ===== */
+.lista{
+    color: chocolate;
+}
+.lista-1{
+    color: chocolate;
+    font-size: 30px;
+}
 
-/* BARRA BUSQUEDA */
-.barra-busqueda{
-    color:chocolate;
-    border-radius: 25%;
-    background-color: aliceblue;
-    padding: 10px;
+/* ===== TARJETAS DE PRODUCTO ===== */
+.pipo{
+    background-color: rgb(176, 176, 193);
+    height: 510px;
+    width: 280px;
+    border-radius: 15px;
+    margin: 30px;
 }
 .autos{
     width: 300px;
-    
 }
 .ver-mas{
     color: rgb(255, 254, 253);
@@ -84,37 +142,8 @@ article{
     margin-right: 15px;
     align-self: center;
 }
-.lista{
-    color: chocolate;
-}
-.lista-1{
-    color: chocolate;
-    font-size: 30px;
-}
-.pipo{
-    background-color: rgb(176, 176, 193);
-    height: 510px;
-}
-h2{
-    margin: 20px;
-    padding-right: 550px;
-    padding-left: 550px;
-    background-color: #2c3e50;
-    color: chocolate;
-    border-radius: 30;
-}
 
-
-/* PRODUCT CSS*/
-.menu{
-    display: flex;
-    flex-direction: row;
-}
-li{
-    margin: 20px;
-    font-size: 20px;
-    align-self: flex-end;
-}
+/* ===== PRODUCT ===== */
 .oso-1{
     display: flex;
     flex-direction: column;
@@ -130,116 +159,92 @@ li{
     flex-wrap: wrap;
     background-color: rgb(195, 195, 195);
 }
-.panda-1{    
-    border: #2c3e50;
-    border-style: solid;
+.porsche{
+    width: 600px;
+}
+.panda-1{
+    border: 3px solid #2c3e50;
     height: 600px;
     background-color: white;
 }
 .panda-2{
     display: flex;
     flex-direction: row;
-    border: #2c3e50;
-    border-style: solid;
-    height: 600px;
     flex-wrap: wrap;
+    border: 3px solid #2c3e50;
+    height: 600px;
 }
 .polar-1{
-    border: #2c3e50;
-    border-style: dashed;
+    border: 3px dashed #2c3e50;
     width: 380px;
     padding: 30px;
-    padding-bottom: 30px;
     background-color: white;
+}
+.comentarios{
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+}
 
-}
-.caja-product{
+/* ===== LOGIN Y REGISTER ===== */
+.contenido-principal{
     display: flex;
-    flex-direction: row;
-    align-self:flex-start;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 20px 0;
+    width: 100%;
 }
-.porsche{
-    width: 600px;
-}
-.orden-product{
+.formulario-login{
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
 }
-.comentarios{
-    align-self: center;
-    margin: 20px;
-    padding-right: 500px;
-    padding-left: 500px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: white;
+.titulo-login{
+    font-size: 26px;
+    color: #1a252f;
+    margin: 0 0 10px 0;
+    text-align: center;
 }
-
-
-
-
-/* LOGIN CSS*/     /* registrarse.html tiene las mismas class que login.html */
-.donOmar{
-    color: rgb(253, 253, 253)
-}
-.menu{
+.campo-formulario{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
-.contenido-principal{
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    min-height: 60vh; 
-    padding: 20px 0;
+.campo-formulario label{
+    font-size: 14px;
+    font-weight: 600;
+    color: #2c3e50;
 }
-.formulario-login{
-    background-color: #ffffff; 
-    border-radius: 8px; 
-    border: 1px #e1e8ed; 
-    padding: 30px;                     
-    display: flex; 
-    flex-direction: column; 
+.campo-formulario input{
+    padding: 10px 14px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
 }
-.titulo-login { 
-    font-size: 26px; 
-    color: #1a252f; 
-    margin: 0 0 10px 0; 
-    text-align: center; 
+.boton-ingresar{
+    background-color: #e74c3c;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
 }
-.campo-formulario { 
-    display: flex; 
-    flex-direction: column; 
+.enlace-registro-contenedor,
+.enlace-login-contenedor{
+    text-align: center;
 }
-.campo-formulario label { 
-    font-size: 14px; 
-    font-weight: 600; 
-    color: #2c3e50; 
-} 
-.campo-formulario input { 
-    padding: 10px 14px; 
-    border: 1px solid #cccccc; 
-    border-radius: 4px; 
-    font-size: 14px; 
+.enlace-registro{
+    color: #2980b9;
+    font-weight: 600;
+    font-size: 14px;
 }
-.boton-ingresar { 
-    background-color: #e74c3c; 
-    color: #ffffff; 
-    border: none; 
-    padding: 12px; 
-    border-radius: 4px; 
-    font-size: 16px; 
-    width: 100%; 
-    text-align: center; 
-} 
-.enlace-registro-contenedor { 
-    text-align: center; 
-} 
-.enlace-registro { 
-    color: #2980b9; 
-    font-weight: 600; 
-    font-size: 14px; 
-}
+
+/* ===== FOOTER ===== */
 footer{
     display: flex;
     flex-direction: row;
@@ -250,11 +255,9 @@ footer{
     color: #e1e8ed;
 }
 
-
-/*   responsive desktop.  */
-@media (max-width: 768px){ 
-     /*header*/
-    header {
+/* ===== RESPONSIVE TABLET ===== */
+@media (max-width: 768px){
+    header{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -262,15 +265,12 @@ footer{
         background-size: cover;
     }
     .logo{
-    align-self:center;
-    width: 80px;
+        align-self: center;
+        width: 80px;
     }
-    
-    /*  main - index.html */
     main{
         flex-direction: column;
         padding: 10px;
-        
     }
     .category{
         display: flex;
@@ -278,62 +278,43 @@ footer{
         flex-wrap: wrap;
         justify-content: center;
     }
-    h2{
-        padding-right: 280px;
-        padding-left: 290px;
-        align-self: center;
-    }
     .pipo{
         width: 47%;
-        .autos{
-            width: 100%;
-        }
     }
-
-    /*  main - product.html */
-
+    .pipo .autos{
+        width: 100%;
+    }
     .oso-2{
         flex-direction: column;
     }
     .porsche{
         width: 100%;
-        }
-        .comentarios {
-        padding-right: 20px;
-        padding-left: 20px;
-        margin: 20px;
     }
-    .panda-2 {
+    .panda-2{
         height: auto;
     }
-    .polar-1 {
+    .polar-1{
         width: 100%;
         padding: 15px;
     }
-    .comentario{
-        padding-right: 20px;
-        padding-left: 20px;
-        margin: 20px;
-    }
 }
 
+/* ===== RESPONSIVE CELULAR ===== */
 @media (max-width: 425px){
-    /* header */
-    .logo {
+    .logo{
         width: 60px;
         margin: 5px;
     }
-    h1 {
+    h1{
         font-size: 26px;
     }
-    li {
+    li{
         margin: 5px;
         font-size: 16px;
     }
     .menu{
         margin: 15px;
     }
-    /* main del html */
     main{
         flex-direction: column;
         padding: 10px;
@@ -344,21 +325,12 @@ footer{
         flex-wrap: wrap;
         justify-content: center;
     }
-    h2{
-        padding-right: 105px;
-        padding-left: 105px;
-        margin-left: 30px;
-        margin-right: 25px;
-        
-    }
     .pipo{
         width: 100%;
-        .autos{
-            width: 100%;
-        }
     }
-    
-    /* main del product */
+    .pipo .autos{
+        width: 100%;
+    }
     .panda-1{
         height: 70%;
     }
