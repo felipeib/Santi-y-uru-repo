@@ -7,7 +7,7 @@ let categoria1 = "smartphones";
 let categoria2 = "mobile-accessories";
 
 /* primera categoria - smartphones */
-fetch('https://dummyjson.com/products/category/smartphones') 
+fetch('https://dummyjson.com/products/category/' + categoria1) 
 .then(function(response) { 
     return response.json(); 
 }) 
@@ -36,12 +36,14 @@ fetch('https://dummyjson.com/products/category/smartphones')
 fetch('https://dummyjson.com/products/category/' + categoria2) 
 .then(function(response) { 
     return response.json(); 
+    
 }) 
 .then(function(data) { 
     let productos = data.products; 
     let contenidoHtml = ""; 
+    
 
-    for (let i = 0; i <= productos.length; i++) { 
+    for (let i = 0; i < productos.length; i++) { 
         let producto = productos[i];
         contenidoHtml += '<article class="pipo"> ' + 
             '<img class="autos" src="' + producto.thumbnail + '" alt="' + producto.title + '">' +

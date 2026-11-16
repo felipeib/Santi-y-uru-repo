@@ -12,9 +12,7 @@ fetch("https://dummyjson.com/products/categories")
         let categoria = categorias[i];
 
         contenidoHtml += '<li>' +
-            '<a class="lista" href="./category.html?slug=' + categoria.slug + '">' +
-            categoria.name +
-            '</a>' +
+            '<a class="lista" href="./category.html?slug=' + categoria.slug + '&nombre=' + categoria.name + '">' + categoria.name + '</a>' +
             '</li>';
     }
 

@@ -127,12 +127,13 @@ h2{
 .pipo{
     background-color: rgb(176, 176, 193);
     height: 510px;
-    width: 280px;
+    width: 250px;
     border-radius: 15px;
     margin: 30px;
+
 }
 .autos{
-    width: 300px;
+    width: 250px;
 }
 .ver-mas{
     color: rgb(255, 254, 253);
