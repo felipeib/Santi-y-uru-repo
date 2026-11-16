@@ -244,6 +244,23 @@ h2{
     font-size: 14px;
 }
 
+#lista-reviews li { 
+    display: flex; 
+    flex-direction: column; 
+    background-color: #f9f9f9; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 8px; 
+    padding: 15px;
+} 
+/*Espaciado de los textos dentro de la caja de cada comentario*/
+#lista-reviews li p { 
+    margin: 4px 0; 
+    color: #333; 
+}  
+#lista-reviews li hr { 
+    display: none; 
+}
+
 /* ===== FOOTER ===== */
 footer{
     display: flex;
