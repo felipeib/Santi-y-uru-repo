@@ -2,6 +2,9 @@
 let seccion1 = document.querySelector("#seccion-1"); 
 let seccion2 = document.querySelector("#seccion-2");
 
+/* categoria elegidad */
+let categoria1 = "smartphones"; 
+let categoria2 = "mobile-accessories";
 
 /* primera categoria - smartphones */
 fetch('https://dummyjson.com/products/category/' + categoria1) 
@@ -29,19 +32,14 @@ fetch('https://dummyjson.com/products/category/' + categoria1)
     console.log("Error: "+error);
 })
 
-/* Segunda categoría - mobile-accessories \*/ 
-fetch('https://dummyjson.com/products/category/mobile-accessories') 
+/* segunda categoria - mobile-accessories */
+fetch('https://dummyjson.com/products/category/' + categoria2) 
 .then(function(response) { 
     return response.json(); 
     
 }) 
 .then(function(data) { 
     let productos = data.products; 
-    let contenidoHtml = "";  
-
-    for (let i = 0; i < productos.length; i++) { 
-        let producto = productos[i]; 
-        
     let contenidoHtml = ""; 
     
 
@@ -53,12 +51,11 @@ fetch('https://dummyjson.com/products/category/mobile-accessories')
             '<p>' + producto.description + '</p>' +
             '<p>$ ' + producto.price + ' USD</p>' +
             '<a class="ver-mas" href="./product.html?id=' + producto.id + '">Ver detalle</a>' +
-            '</article>'; 
-    } 
-        
-    seccion2.innerHTML = contenidoHtml; 
-}) 
-.catch(function(error) { 
-    console.log("Error: " + error); 
-    seccion2.innerHTML = "<p>Error al cargar la segunda sección.</p>"; 
-});
+            '</article>';
+    }
+
+    seccion2.innerHTML=contenidoHtml;
+})
+.catch(function(error){
+    console.log("Error:"+error);
+})
