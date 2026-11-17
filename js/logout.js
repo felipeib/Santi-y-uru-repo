@@ -3,7 +3,7 @@ let itemLogin = document.querySelector("#item-login");
 let itemRegistro = document.querySelector("#item-registro"); 
 let saludo = document.querySelector("#saludo");
 
-/* 2\. Escuchar el evento click sobre el elemento de Logout */ 
+/*Escuchar el evento click sobre el elemento de Logout */ 
 if (itemLogout) { 
     itemLogout.addEventListener("click", function(event) { 
         event.preventDefault(); 
